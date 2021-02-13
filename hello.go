@@ -1,11 +1,14 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
-
-	"rsc.io/quote"
+	"os"
 )
 
 func main() {
-	fmt.Println(quote.Go())
+	reader := bufio.NewReader(os.Stdin)
+	fmt.Print("Enter text: ")
+	text, _ := reader.ReadString('\n')
+	fmt.Println(text)
 }
