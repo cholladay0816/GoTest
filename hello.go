@@ -1,14 +1,16 @@
 package main
 
 import (
-	"bufio"
 	"fmt"
-	"os"
 )
 
+var arr [10]int
+
 func main() {
-	reader := bufio.NewReader(os.Stdin)
-	fmt.Print("Enter text: ")
-	text, _ := reader.ReadString('\n')
-	fmt.Println(text)
+	for i := 0; i < 10; i++ {
+		arr[i] = (i + 1) * 2
+	}
+	for i := 0; i < len(arr); i++ {
+		fmt.Println(arr[i])
+	}
 }
