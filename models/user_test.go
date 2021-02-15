@@ -1,12 +1,12 @@
-package main
+package models
 
 import "testing"
 
 func TestUser(t *testing.T) {
 
-	u := User{name: "Test Name"}
+	u := User{Name: "Test Name"}
 
-	actual := u.getName()
+	actual := u.GetName()
 	expected := "Test Name"
 
 	if expected != actual {

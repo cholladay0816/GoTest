@@ -3,12 +3,13 @@ package main
 import (
 	"fmt"
 
-	"example.com/mathpack"
+	"github.com/cholladay0816/gotest/mathpack"
+	"github.com/cholladay0816/gotest/models"
 )
 
 func main() {
 	fmt.Println("Start")
-	u := User{name: "Test User"}
+	u := models.User{Name: "Test User"}
 	fmt.Println(u)
 	i := 5.0
 	m := 2.0
